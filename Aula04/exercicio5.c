@@ -1,28 +1,32 @@
 #include <stdio.h>
 #include <locale.h>
+
 int main() {
-  setlocale(LC_CTYPE, "");
-  char opcao;
-  int num_diarias;
-  printf("\nHospedagem An√°lia");
-  printf("\n[S] Quarto simples");
-  printf("\n[D] Quarto duplo");
-  printf("\n[T] Quarto triplo");
-  printf("\nDigite uma op√ß√£o: ");
-  scanf(" %c", &opcao);
-  printf("Qual a quantidade de di√°rias: ");
-  scanf("%d", &num_diarias);
-  if(opcao == 's' || opcao == 'S') {
-  printf("Total a pagar R$ %.2d", (num_diarias*300));
-      } 
-      } 
-      } 
-      }
-  else if (opcao == 'd' || opcao == 'D') {
-  printf("Total a pagar R$ %.2d", (num_diarias*450));
-  else if (opcao == 't' || opcao == 'T') {
-  printf("Total a pagar R$ %.2d", (num_diarias*600));
-  else {
-  printf("Op√ß√£o inv√°lida!!!");
-  return 0;
+
+    setlocale(LC_CTYPE, "");
+
+    char opcao;
+    int num_diarias;
+
+    printf("\nHospedagem An·lia");
+    printf("\n[S] Quarto simples");
+    printf("\n[D] Quarto duplo");
+    printf("\n[T] Quarto triplo");
+    printf("\nDigite uma opÁ„o: ");
+    scanf(" %c", &opcao);
+
+    printf("Qual a quantidade de di·rias: ");
+    scanf("%d", &num_diarias);
+
+    if(opcao == 's' || opcao == 'S') {
+        printf("Total a pagar R$ %.2d", (num_diarias*300));
+    } else if (opcao == 'd' || opcao == 'D') {
+        printf("Total a pagar R$ %.2d", (num_diarias*450));
+    } else if (opcao == 't' || opcao == 'T') {
+        printf("Total a pagar R$ %.2d", (num_diarias*600));
+    } else {
+        printf("OpÁ„o inv·lida!!!");
+    }
+
+    return 0;
 }
