@@ -1,22 +1,26 @@
-#include<stdio.h>
-#include<locale.h>
+#define TAM 6
 
 int main () {
 
-    setlocale(LC_CTYPE, "");
+    float salarios[TAM];
+    float total, media, maior=0;
+    int i, contador;
 
-    int num = 1, soma=0;
-
-    while (num!=0) {
-        printf("Vai digitando: ");
-        scanf("%d", &num);
-
-        if (num != 0 && num % 2 != 0) {
-            soma += num;
+    for (i = 0 ; i < TAM ; i++) {
+        printf("Digite o salário do %dº funcionário: ", (i+1));
+        scanf("%f", &salarios[i]);
+        total += salarios[i];
+    }
+    media = total/TAM;
+    for (i = 0 ; i < TAM ; i++) {
+        if (maior < salarios[i]) {
+            maior = salarios[i];
+        }
+        if (salarios[i] < media) {
+            contador++;
         }
     }
-
-    printf("Soma dos n�meros �mpares: %.2d", soma);
-
-    return 0;
+    printf("\nMédia salarial: R$ %.2f", media);
+    printf("\nMaior salário: R$ %.2f", maior);
+    printf("\nSalários abaixo da média: %d\n\n", contador);
 }

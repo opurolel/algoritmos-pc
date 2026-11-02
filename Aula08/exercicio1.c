@@ -1,23 +1,16 @@
-#include<stdio.h>
-#include<locale.h>
 
 int main () {
+   
+    float salarios[4];
+    int i=0;
 
-    setlocale(LC_CTYPE, "");
-
-    int cpf, i;
-    float preco, total_compra;
-
-    printf("Qual o seu cpf? ");
-    scanf("%d",&cpf);
-
-    for (i=1 ; i<=5 ; i++) {
-        printf("Defina o pre�o do item: ");
-        scanf("%f", &preco);
-        total_compra += preco;
+    for (i = 0 ; i < 4 ; i++) {
+        printf("Digite o salário do %dº funcionário: ", (i+1));
+        scanf("%f", &salarios[i]);
     }
 
-    printf("\nCompra do cpf: %d\nO total da compra �: R$%.2f\n",cpf, total_compra);
+    for ( i = 0 ; i < 4 ; i++) {
+        printf("\nFuncionário %dº: R$ %.2f ", (i+1), salarios[i]);
+    }
 
-    return 0;
 }

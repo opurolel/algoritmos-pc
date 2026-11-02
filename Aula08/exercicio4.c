@@ -1,26 +1,28 @@
-#include<stdio.h>
-#include<locale.h>
+#define LIN 3
+#define COL 4
 
-int main () {
+int main() {
 
-    setlocale(LC_CTYPE, "");
-    float nota, soma=0, media;
-    int i;
+    int produtos[LIN][COL];
 
-    for(i=0; i<3; i++){
-        do {
-            printf("\nDigite a nota do %dº aluno (0-10): ", (i+1));
-            scanf("%f", &nota);
-            if (nota<0 || nota>=10) {
-                printf("\nNota inválida!! Tente outra vez!!");
-            } else {
-                soma += nota;
-            }
-        } while (nota<0 || nota>=10);
+    int i=0, j=0, total_geral = 0, soma;
+
+    for (i = 0 ; i < LIN ; i++) {
+        for (j = 0 ; j < COL ; j++) {
+            printf("Qual a qte do %dÂº produto no %dÂº dia: ", (i+1), (j+1));
+            scanf("%d", &produtos[i][j]);
+            total_geral += produtos[i][j];
+        }
+        printf("\n");
     }
 
-    media = soma/3;
-    printf("\nA média do aluno é: %.2f", media);
+    for (i = 0 ; i < LIN ; i++) {
+        soma = 0;
+        for (j = 0 ; j < COL ; j++) {
+            soma += produtos[i][j];
+        }
+        printf("\nProduto %d: %d unidades", (i+1), soma);
+    }
 
-    return 0;
+    printf("\nTotal geral: %d\n", total_geral);
 }
