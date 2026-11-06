@@ -31,21 +31,22 @@ Cada pasta possui um `README.md` com o enunciado das atividades e o objetivo da 
 
 | Aula | Tema | Principais conteúdos |
 |---|---|---|
-| [Aula 02](./Aula_02/README.md) | Introdução à Programação em Linguagem C | Compiladores e interpretadores, pseudocódigo, estrutura de um programa em C, tipos de dados, variáveis, `printf()` e `scanf()` |
-| [Aula 03](./Aula_03/README.md) | Operadores e Expressões | Operadores aritméticos, relacionais e lógicos, precedência, divisão inteira × real, biblioteca `math.h` |
-| [Aula 04](./Aula_04/README.md) | Estruturas de Decisão | `if`, `if...else`, decisões aninhadas, `switch...case` |
-| [Aula 06](./Aula_06/README.md) | Estruturas de Repetição | `for`, `while`, `do...while`, validação de dados, `break` e `continue` |
-| [Aula 07](./Aula_07/README.md) | Exercícios e Projeto | Revisão de repetição com contadores e acumuladores, leitura de strings |
-| [Aula 08](./Aula_08/README.md) | Estruturas de Dados Básicas | Vetores, matrizes, padrões de processamento, strings |
-| [Aula 09](./Aula_09/README.md) | Manipulação de Arquivos | Ponteiros (introdução), `fopen()`, `fclose()`, modos `r`/`w`/`a`, `fprintf()`, `fgets()`, `fscanf()` |
-| [Aula 10](./Aula_10/README.md) | Funções e Modularização | Funções, parâmetros por valor e por referência, `struct`, vetor de estruturas |
+| [Aula 02](./Aula02/README.md) | Introdução à Programação em Linguagem C | Compiladores e interpretadores, pseudocódigo, estrutura de um programa em C, tipos de dados, variáveis, `printf()` e `scanf()` |
+| [Aula 03](./Aula03/README.md) | Operadores e Expressões | Operadores aritméticos, relacionais e lógicos, precedência, divisão inteira × real, biblioteca `math.h` |
+| [Aula 04](./Aula04/README.md) | Estruturas de Decisão | `if`, `if...else`, decisões aninhadas, `switch...case` |
+| [Aula 05](./Aula05/README.md) | Projeto 1 | Operadores relacionais e lógicos (&&, ||, !) |
+| [Aula 06](./Aula06/README.md) | Estruturas de Repetição | `for`, `while`, `do...while`, validação de dados, `break` e `continue` |
+| [Aula 07](./Aula07/README.md) | Exercícios e Projeto | Revisão de repetição com contadores e acumuladores, leitura de strings |
+| [Aula 08](./Aula08/README.md) | Estruturas de Dados Básicas | Vetores, matrizes, padrões de processamento, strings |
+| [Aula 09](./Aula09/README.md) | Manipulação de Arquivos | Ponteiros (introdução), `fopen()`, `fclose()`, modos `r`/`w`/`a`, `fprintf()`, `fgets()`, `fscanf()` |
+| [Aula 10](./Aula10/README.md) | Funções e Modularização | Funções, parâmetros por valor e por referência, `struct`, vetor de estruturas |
 
 ### Projetos
 
 | Projeto | Tema | Conteúdos aplicados |
 |---|---|---|
-| [Projeto 1 (Aula 05)](./Projeto_1/README.md) | **Arena Tech** — planejamento e viabilidade de uma maratona gamer | Entrada e saída, operadores, estruturas de decisão e relatório de viabilidade, com avaliação por pares |
-| [Projeto 3 (Aula 07)](./Projeto_3/README.md) | **Missão Orbital** — simulador de treinamento espacial | `for`, `while`, `do...while` e condicionais para validar pontuações e classificar cadetes |
+| [Projeto 1 (Aula 05)](./Aula05/README.md) | **Arena Tech** — planejamento e viabilidade de uma maratona gamer | Entrada e saída, operadores, estruturas de decisão e relatório de viabilidade, com avaliação por pares |
+| [Projeto 3 (Aula 07)](./Aula07/Projeto%203%20-%20Missão%20Orbital/README.md) | **Missão Orbital** — simulador de treinamento espacial | `for`, `while`, `do...while` e condicionais para validar pontuações e classificar cadetes |
 
 ---
 
